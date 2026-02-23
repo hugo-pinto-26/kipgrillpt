@@ -47,7 +47,7 @@
          <div class="promo-popup">
             <button class="popup-close">&times;</button>
             <img src="images/promotional1.png" style="width:100%;height:auto;margin-bottom:10px;">
-            <h3>Special Offer</h3>
+            <!-- <h3>Special Offer</h3> -->
             <p>Order now and enjoy the taste of Portugal!</p>
             <a href="https://mylightspeed.app/XRYFQKKX/C-ordering/menu" class="btn">Order Now</a>
          </div>
@@ -64,19 +64,6 @@
                   <a href="/" class="mobile-brand">
                   <img src="images/logo.png" alt="logo" class="blue-logo">
                   </a>
-                  <!-- <div class="navbar-option d-flex align-items-center">
-                     <div class="navbar-option-item navbar-option-dots mobile-hide">
-                        <button 
-                           class="dropdown-toggle" 
-                           type="button" 
-                           id="mobileOptionDropdown" 
-                           data-bs-toggle="dropdown" 
-                           aria-haspopup="true" 
-                           aria-expanded="false">
-                           <i class="flaticon-menu-1"></i>
-                        </button> 
-                     </div>
-                  </div> -->
                </div>
                <div class="main-nav">
                   <div class="container">
@@ -534,8 +521,8 @@
                            <li>Sunday: <span>16:00 - 22.00</span></li>
                            <li>Monday: <span>Closed</span></li>
                            <li>Tuesday: <span>Closed</span></li>
-                           <li>Wednesday: <span>Closed</span></li>
-                           <li>Thursday: <span>Closed</span></li>
+                           <li>Wednesday: <span>16:00 - 22.00</span></li>
+                           <li>Thursday: <span>16:00 - 22.00</span></li>
                         </ul>
                      </div>
                   </div>
@@ -572,9 +559,7 @@
 
                   sessionStorage.setItem('popupShown', 'true');
                }, 800);
-
             }
-
          });
       </script>
       <script data-cfasync="false" src="images/email-decode.min.js"></script><script src="images/jquery.min.js"></script>
@@ -617,6 +602,12 @@ $(window).on('load', function() {
    }, 800); // adjust delay if needed
 
 });
+</script>
+<script>
+   jQuery(document).on('click', '.popup-close', function (e) {
+      e.preventDefault();
+      jQuery.magnificPopup.close();
+   });
 </script>
    </body>
 </html>
