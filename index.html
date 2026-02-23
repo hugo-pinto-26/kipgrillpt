@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="eng">
    <head>
-      <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="100d4fa5-e719-428b-8b8f-97cc54affc79" data-blockingmode="auto" type="text/javascript"></script>
+      <!-- <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="100d4fa5-e719-428b-8b8f-97cc54affc79" data-blockingmode="auto" type="text/javascript"></script> -->
       <meta charset="utf-8">
       <meta name="description" content="KipGrill">
       <meta name="keywords" content="HTML,CSS,JavaScript">
@@ -42,6 +42,21 @@
             </div>
          </div>
       </div>
+      <!-- Auto Popup -->
+      <div id="autoPopup" class="mfp-hide">
+         <div class="promo-popup">
+            <button class="popup-close">&times;</button>
+            <img src="images/promotional1.png" style="width:100%;height:auto;margin-bottom:10px;">
+            <h3>Special Offer</h3>
+            <p>Order now and enjoy the taste of Portugal!</p>
+            <a href="https://mylightspeed.app/XRYFQKKX/C-ordering/menu" class="btn">Order Now</a>
+         </div>
+      </div>
+         <!-- Modal -->
+      <div id="imageModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="modalImg">
+      </div>
       <header>
          <div class="fixed-top">
             <div class="navbar-area navbar-dark">
@@ -49,7 +64,7 @@
                   <a href="/" class="mobile-brand">
                   <img src="images/logo.png" alt="logo" class="blue-logo">
                   </a>
-                  <div class="navbar-option d-flex align-items-center">
+                  <!-- <div class="navbar-option d-flex align-items-center">
                      <div class="navbar-option-item navbar-option-dots mobile-hide">
                         <button 
                            class="dropdown-toggle" 
@@ -59,9 +74,9 @@
                            aria-haspopup="true" 
                            aria-expanded="false">
                            <i class="flaticon-menu-1"></i>
-                        </button>
+                        </button> 
                      </div>
-                  </div>
+                  </div> -->
                </div>
                <div class="main-nav">
                   <div class="container">
@@ -544,6 +559,24 @@
             <span><i class="flaticon-up-arrow"></i></span>
          </div>
       </div>
+      <script>
+         $(window).on('load', function() {
+
+            if (!sessionStorage.getItem('popupShown')) {
+
+               setTimeout(function() {
+                  $.magnificPopup.open({
+                     items: { src: '#autoPopup' },
+                     type: 'inline'
+                  });
+
+                  sessionStorage.setItem('popupShown', 'true');
+               }, 800);
+
+            }
+
+         });
+      </script>
       <script data-cfasync="false" src="images/email-decode.min.js"></script><script src="images/jquery.min.js"></script>
       <script src="images/bootstrap.bundle.min.js"></script>
       <script src="images/jquery-ui.js"></script>
@@ -568,5 +601,22 @@
       <script src="images/contact-form-script.js"></script>
       <script src="images/jquery.meanmenu.min.js"></script>
       <script src="images/script.js"></script>
+<script>
+$(window).on('load', function() {
+
+   // Small delay so it appears AFTER preloader fade
+   setTimeout(function() {
+      $.magnificPopup.open({
+         items: {
+            src: '#autoPopup'
+         },
+         type: 'inline',
+         removalDelay: 300,
+         mainClass: 'mfp-fade'
+      });
+   }, 800); // adjust delay if needed
+
+});
+</script>
    </body>
 </html>
