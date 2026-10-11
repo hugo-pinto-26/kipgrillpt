@@ -1,560 +1,290 @@
 <!DOCTYPE html>
-<html lang="eng">
-   <head>
-      <!-- <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="100d4fa5-e719-428b-8b8f-97cc54affc79" data-blockingmode="auto" type="text/javascript"></script> -->
-      <meta charset="utf-8">
-      <meta name="description" content="KipGrill">
-      <meta name="keywords" content="HTML,CSS,JavaScript">
-      <meta name="author" content="KipGrill">
-      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-      <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-      <title>KipGrill - Smaak van Portugal</title>
-      <link rel="icon" href="images/tab.png" type="image/png" sizes="16x16">
-      <link rel="stylesheet" href="images/bootstrap.min.css" type="text/css" media="all" />
-      <link rel="stylesheet" href="bootstrap-reboot.min.html" type="text/css" media="all" />
-      <link rel="stylesheet" href="images/animate.min.css" type="text/css" media="all" />
-      <link rel="stylesheet" href="images/owl.carousel.min.css" type="text/css" media="all" />
-      <link rel="stylesheet" href="images/owl.theme.default.min.css" type="text/css" media="all" />
-      <link rel="stylesheet" href="images/slick.css" type="text/css" media="all" />
-      <link rel="stylesheet" href="images/slick-theme.css" type="text/css" media="all" />
-      <link rel="stylesheet" href="images/jquery-ui.css" type="text/css" media="all" />
-      <link rel="stylesheet" href="images/jquery.timepicker.min.css" type="text/css" media="all" />
-      <link rel="stylesheet" href="images/meanmenu.min.css" type="text/css" media="all" />
-      <link rel="stylesheet" href="images/magnific-popup.min.css" type="text/css" media="all" />
-      <link rel="stylesheet" href="images/icofont.min.css" type="text/css" media="all" />
-      <link rel="stylesheet" href="images/flaticon.css" type="text/css" media="all" />
-      <link rel="stylesheet" href="images/settings.css" type="text/css" media="all" />
-      <link rel="stylesheet" href="images/layers.css" type="text/css" media="all" />
-      <link rel="stylesheet" href="images/navigation.css" type="text/css" media="all" />
-      <link rel="stylesheet" href="images/style.css" type="text/css" media="all" />
-      <link rel="stylesheet" href="images/responsive.css" type="text/css" media="all" />
-      <link rel="stylesheet" href="images/theme-dark.css" type="text/css" media="all" />
-      
-      <!-- [if IE]>
-         <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-         <![endif] -->
-   </head>
-   <body>
-      <div class="preloader bg-main">
-         <div class="preloader-wrapper">
-            <div class="preloader-grid">
-                  <img src="images/logo.png" alt="logo" class="blue-logo">
-            </div>
-         </div>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="KipGrill in Lommel: traditional Portuguese piri piri chicken grilled over charcoal. Order online.">
+  <meta name="author" content="KipGrill">
+  <title>KipGrill - Smaak van Portugal</title>
+  <link rel="icon" href="images/tab.png" type="image/png">
+  <link rel="stylesheet" href="images/bootstrap.min.css">
+  <link rel="stylesheet" href="images/animate.min.css">
+  <link rel="stylesheet" href="images/owl.carousel.min.css">
+  <link rel="stylesheet" href="images/owl.theme.default.min.css">
+  <link rel="stylesheet" href="images/slick.css">
+  <link rel="stylesheet" href="images/slick-theme.css">
+  <link rel="stylesheet" href="images/jquery-ui.css">
+  <link rel="stylesheet" href="images/jquery.timepicker.min.css">
+  <link rel="stylesheet" href="images/meanmenu.min.css">
+  <link rel="stylesheet" href="images/magnific-popup.min.css">
+  <link rel="stylesheet" href="images/icofont.min.css">
+  <link rel="stylesheet" href="images/flaticon.css">
+  <link rel="stylesheet" href="images/settings.css">
+  <link rel="stylesheet" href="images/layers.css">
+  <link rel="stylesheet" href="images/navigation.css">
+  <link rel="stylesheet" href="images/style.css">
+  <link rel="stylesheet" href="images/responsive.css">
+  <link rel="stylesheet" href="images/theme-dark.css">
+</head>
+<body>
+  <div class="preloader bg-main">
+    <div class="preloader-wrapper">
+      <div class="preloader-grid">
+        <img src="images/logo.png" alt="KipGrill" class="blue-logo">
       </div>
-      <!-- Auto Popup -->
-      <div id="autoPopup" class="mfp-hide">
-         <div class="promo-popup">
-            <button class="popup-close">&times;</button>
-            <img src="images/promotional1.png" style="width:90%;height:auto;margin-bottom:10px;">
-            <!-- <h3>Special Offer</h3> -->
-            <p>Order now and enjoy the taste of Portugal!</p>
-            <a href="https://mylightspeed.app/XRYFQKKX/C-ordering/menu" class="btn">Order Now</a>
-         </div>
-      </div>
-         <!-- Modal -->
-      <div id="imageModal" class="modal">
-            <span class="close">&times;</span>
-            <img class="modal-content" id="modalImg">
-      </div>
-      <header>
-         <div class="fixed-top">
-            <div class="navbar-area navbar-dark">
-               <div class="mobile-nav">
-                  <a href="/" class="mobile-brand">
-                  <img src="images/logo.png" alt="logo" class="blue-logo">
+    </div>
+  </div>
+
+  <!-- Promo popup (opened once per session by js/site.js) -->
+  <div id="autoPopup" class="mfp-hide">
+    <div class="promo-popup">
+      <button type="button" class="popup-close" aria-label="Close">&times;</button>
+      <img src="images/promotional1.png" alt="KipGrill promotion" style="width: 90%; height: auto; margin-bottom: 10px;">
+      <p>Order now and enjoy the taste of Portugal!</p>
+      <a href="https://mylightspeed.app/XRYFQKKX/C-ordering/menu" class="btn">Order Now</a>
+    </div>
+  </div>
+  <header>
+    <div class="fixed-top">
+      <div class="navbar-area navbar-dark">
+        <div class="mobile-nav">
+          <a href="/" class="mobile-brand">
+            <img src="images/logo.png" alt="KipGrill" class="blue-logo">
+          </a>
+        </div>
+        <div class="main-nav">
+          <div class="container">
+            <nav class="navbar navbar-expand-md navbar-light">
+              <a class="navbar-brand" href="/">
+                <img src="images/logo.png" alt="KipGrill" class="logo">
+              </a>
+              <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                    <a href="/" class="nav-link active">HOME</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="https://mylightspeed.app/XRYFQKKX/C-ordering/menu" class="nav-link">MENU</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link dropdown-toggle">MORE</a>
+                    <ul class="dropdown-menu">
+                <li class="nav-item">
+                  <a href="about-us.html" class="nav-link">About Us</a>
+                </li>
+                <li class="nav-item">
+                  <a href="our-history.html" class="nav-link">Our History</a>
+                </li>
+                <li class="nav-item">
+                  <a href="our-team.html" class="nav-link">Our Team</a>
+                </li>
+                <li class="nav-item">
+                  <a href="terms-conditions.html" class="nav-link">Terms &amp; Conditions</a>
+                </li>
+                <li class="nav-item">
+                  <a href="privacy-policy.html" class="nav-link">Privacy Policy</a>
+                </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              <div class="navbar-option d-flex align-items-center">
+                <div class="navbar-option-item navbar-option-order">
+                  <a href="https://mylightspeed.app/XRYFQKKX/C-ordering/menu" class="btn text-nowrap">
+                    Order Online <i class="flaticon-shopping-cart-black-shape"></i>
                   </a>
-               </div>
-               <div class="main-nav">
-                  <div class="container">
-                     <nav class="navbar navbar-expand-md navbar-light">
-                        <a class="navbar-brand" href="/">
-                        <img src="images/logo.png" alt="logo" class="logo">
-                        </a>
-                        <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
-                           <ul class="navbar-nav ms-auto">
-                              <li class="nav-item">
-                                 <a href="/" class="nav-link active">HOME</a>
-                              <li class="nav-item">
-                                 <a href="https://mylightspeed.app/XRYFQKKX/C-ordering/menu" class="nav-link">MENU</a>
-                              </li>
-                              <li class="nav-item">
-                                 <a class="nav-link dropdown-toggle">MORE</a>
-                                 <ul class="dropdown-menu">
-                                    <li class="nav-item">
-                                       <a href="about-us.html" class="nav-link">About Us</a>
-                                    </li>
-                                    <li class="nav-item">
-                                       <a href="our-history.html" class="nav-link">Our History</a>
-                                    </li>
-                                    <li class="nav-item">
-                                       <a href="#" class="nav-link dropdown-toggle">Team</a>
-                                       <ul class="dropdown-menu">
-                                          <li class="nav-item">
-                                             <a href="our-team.html" class="nav-link">Our Team</a>
-                                          </li>
-                                       </ul>
-                                    </li>
-                                    <li class="nav-item">
-                                       <a class="nav-link dropdown-toggle">Others</a>
-                                       <ul class="dropdown-menu">
-                                          <li class="nav-item">
-                                             <a href="terms-conditions.html" class="nav-link">Terms & Conditions</a>
-                                          </li>
-                                          <li class="nav-item">
-                                             <a href="privacy-policy.html" class="nav-link">Privacy Policy</a>
-                                          </li>
-                                       </ul>
-                                    </li>
-                                 </ul>
-                              </li>
-                           </ul>
-                           </li>
-                           </ul>
-                        </div>
-                        <div class="navbar-option d-flex align-items-center">
-                           <div class="navbar-option-item navbar-option-search">
-                              <div class="dropdown-menu" aria-labelledby="search1">
-                              </div>
-                           </div>
-                           <div class="navbar-option-item navbar-option-order">
-                              <a href="https://mylightspeed.app/XRYFQKKX/C-ordering/menu" class="btn text-nowrap">
-                              Order Online <i class="flaticon-shopping-cart-black-shape"></i>
-                              </a>
-                           </div>
-                        </div>
-                     </nav>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </header>
-      <div class="header-bg">
-         <div class="container">
-            <div class="rev_slider_wrapper">
-               <div id="rev_slider_1" class="rev_slider" data-version="5.4.5" style="display:none">
-                  <ul>
-                     <li 
-                        data-index="rs-2" 
-                        data-transition="fade" 
-                        data-slotamount="default" 
-                        data-hideafterloop="0" 
-                        data-hideslideonmobile="off" 
-                        data-easein="default" 
-                        data-easeout="default" 
-                        data-masterspeed="300" 
-                        data-rotate="0" 
-                        data-saveperformance="off" 
-                        data-title="Slide">
-                        <div class="tp-caption LandingPage-Title tp-resizeme" id="slide-2-layer-1" data-x="['left','center','center','center']" data-hoffset="none" data-y="['top','top','top','top']" 
-                        data-voffset="['170','50','70','45']" 
-                        data-fontsize="['60','60','45','35']" 
-                        data-lineheight="['85','85','55','40']" 
-                        data-letterspacing="4" data-type="text" 
-                        data-responsive_offset="on" data-frames="[{&quot;from&quot;:&quot;x:-50px;opacity:0;&quot;,&quot;speed&quot;:1500,&quot;to&quot;:&quot;o:1;&quot;,&quot;delay&quot;:500,&quot;ease&quot;:&quot;Power3.easeOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:300,&quot;to&quot;:&quot;opacity:0;&quot;,&quot;ease&quot;:&quot;nothing&quot;}]" 
-                        data-textAlign="['left','center','center','center']" data-fontweight="400" 
-                        style="z-index: 5; white-space: nowrap;">We Ensure That You <br> Will Be Satisfied</div>
-                        <div class="tp-caption LandingPage-SubTitle   tp-resizeme" 
-                           id="slide-2-layer-2" 
-                           data-x="['left','center','center','center']" 
-                           data-hoffset="none" data-y="['top','top','top','top']" 
-                           data-voffset="['355','240','215','140']" 
-                           data-fontsize="['25','25','17','17']" 
-                           data-lineheight="['30','30','25','25']" 
-                           data-width="['450','450','450','450']" 
-                           data-fontweight="500" 
-                           data-type="text" 
-                           data-responsive_offset="on" 
-                           data-frames="[{&quot;from&quot;:&quot;x:-50px;opacity:0;&quot;,&quot;speed&quot;:1500,&quot;to&quot;:&quot;o:1;&quot;,&quot;delay&quot;:700,&quot;ease&quot;:&quot;Power3.easeOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:300,&quot;to&quot;:&quot;opacity:0;&quot;,&quot;ease&quot;:&quot;nothing&quot;}]" 
-                           data-textAlign="['left','left','center','center']" 
-                           style="z-index: 7;white-space: normal;font-style:normal;">1/2 Chicken + Fries, Salad and Drink</div>
-                        <div class="tp-caption LandingPage-SubTitle tp-resizeme" id="slide-2-layer-3" data-x="['left','center','center','center']" data-hoffset="none" data-y="['top','top','top','top']" 
-                           data-voffset="['415','300','270','185']" 
-                           data-fontsize="['20','20','17','17']" 
-                           data-lineheight="['30','30','25','25']" 
-                           data-width="['380','380','380','380']" 
-                           data-height="none" 
-                           data-whitespace="normal" 
-                           data-type="text" 
-                           data-responsive_offset="on" 
-                           data-frames="[{&quot;from&quot;:&quot;x:-50px;opacity:0;&quot;,&quot;speed&quot;:1500,&quot;to&quot;:&quot;o:1;&quot;,&quot;delay&quot;:700,&quot;ease&quot;:&quot;Power3.easeOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:300,&quot;to&quot;:&quot;opacity:0;&quot;,&quot;ease&quot;:&quot;nothing&quot;}]" 
-                           data-textAlign="['left','center','center','center']" 
-                           style="z-index: 7;white-space: normal;font-style:normal; display: flex;align-items: center; max-width: 300px;">
-                           <a href="https://mylightspeed.app/XRYFQKKX/C-ordering/menu" class="btn">Order Now<i class="flaticon-shopping-cart-black-shape"></i>
-                           </a>
-                           <p class="header-product-price color-white">€15.00</p>
-                        </div>
-                        <div 
-                           class="tp-caption tp-resizeme" 
-                           id="slide-2-layer-4" 
-                           data-x="['right','center','center','center']" 
-                           data-hoffset="['0','0','0','0']" data-y="['top','top','top','top']" 
-                           data-voffset="['87','380','370','270']" 
-                           data-type="image" 
-                           data-responsive_offset="on" 
-                           data-frames="[{&quot;from&quot;:&quot;x:0;y:0;z:0;rX:0;rY:0;rZ:0;sX:0.75;sY:0.75;skX:0;skY:0;opacity:0;&quot;,&quot;speed&quot;:1500,&quot;to&quot;:&quot;o:1;&quot;,&quot;delay&quot;:1000,&quot;ease&quot;:&quot;Power3.easeOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:300,&quot;to&quot;:&quot;opacity:0;&quot;,&quot;ease&quot;:&quot;nothing&quot;}]" 
-                           style="z-index: 8;border-width:0px;">
-                           <img src="images/header-carousel-2.png" 
-                              alt data-ww="['550px','550px','550px','550px']" 
-                              data-hh="['520px','520px','520px','520px']" 
-                              width="650" 
-                              height="615" 
-                              data-no-retina> 
-                           </div>
-                        <div 
-                           class="tp-caption tp-resizeme" 
-                           id="slide-2-layer-5" 
-                           data-x="['left','left','left','left']" 
-                           data-y="['top','top','top','top']" 
-                           data-voffset="['30','30','30','30']" 
-                           data-type="image" 
-                           data-responsive_offset="on" 
-                           data-frames="[{&quot;from&quot;:&quot;x:-50px;rZ: -120deg;opacity:0;&quot;,&quot;speed&quot;:1500,&quot;to&quot;:&quot;o:1;&quot;,&quot;delay&quot;:700,&quot;ease&quot;:&quot;Power3.easeOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:300,&quot;to&quot;:&quot;opacity:0;&quot;,&quot;ease&quot;:&quot;nothing&quot;}]" 
-                           style="z-index: 8;border-width:0px;">
-                        </div>
-                        <div class="tp-caption tp-resizeme" 
-                           id="slide-2-layer-6" 
-                           data-x="['center','center','center','center']" 
-                           data-y="['top','top','top','top']" 
-                           data-voffset="['50','-10','10','-20']" 
-                           data-type="image" 
-                           data-responsive_offset="on" 
-                           data-frames="[{&quot;from&quot;:&quot;y:-50px;opacity:0;&quot;,&quot;speed&quot;:1500,&quot;to&quot;:&quot;o:1;&quot;,&quot;delay&quot;:700,&quot;ease&quot;:&quot;Power3.easeOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:300,&quot;to&quot;:&quot;opacity:0;&quot;,&quot;ease&quot;:&quot;nothing&quot;}]" 
-                           style="z-index: 8;border-width:0px;">
-                        </div>
-                        <div 
-                           class="tp-caption tp-resizeme" 
-                           id="slide-2-layer-7"
-                           data-x="['right','right','right','right']" 
-                           data-y="['top','top','top','top']" 
-                           data-voffset="['-45','-45','-45','-75']" 
-                           data-type="image" 
-                           data-responsive_offset="on" data-frames="[{&quot;from&quot;:&quot;x:50px;opacity:0;&quot;,&quot;speed&quot;:1500,&quot;to&quot;:&quot;o:1;&quot;,&quot;delay&quot;:700,&quot;ease&quot;:&quot;Power3.easeOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:300,&quot;to&quot;:&quot;opacity:0;&quot;,&quot;ease&quot;:&quot;nothing&quot;}]" 
-                           style="z-index: 8;border-width:0px;">
-                        </div>
-                        <div 
-                           class="tp-caption tp-resizeme" 
-                           id="slide-2-layer-8" 
-                           data-x="['right','right','right','right']" 
-                           data-y="['top','top','top','top']" 
-                           data-voffset="['150','150','150','150']" 
-                           data-type="image" 
-                           data-responsive_offset="on" data-frames="[{&quot;from&quot;:&quot;x:-50px;rZ: -120deg;opacity:0;&quot;,&quot;speed&quot;:1500,&quot;to&quot;:&quot;o:1;&quot;,&quot;delay&quot;:700,&quot;ease&quot;:&quot;Power3.easeOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:300,&quot;to&quot;:&quot;opacity:0;&quot;,&quot;ease&quot;:&quot;nothing&quot;}]" 
-                           style="z-index: 8;border-width:0px;">
-                        </div>
-                        <div 
-                           class="tp-caption tp-resizeme" 
-                           id="slide-2-layer-9" 
-                           data-x="['center','center','center','center']" 
-                           data-y="['center','center','center','center']" 
-                           data-voffset="['150','150','150','150']" 
-                           data-type="image" data-responsive_offset="on" data-frames="[{&quot;from&quot;:&quot;x:50px;rZ: -120deg;opacity:0;&quot;,&quot;speed&quot;:1500,&quot;to&quot;:&quot;o:1;&quot;,&quot;delay&quot;:700,&quot;ease&quot;:&quot;Power3.easeOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:300,&quot;to&quot;:&quot;opacity:0;&quot;,&quot;ease&quot;:&quot;nothing&quot;}]" 
-                           style="z-index: 8;border-width:0px;">
-                        </div>
-                        <div 
-                           class="tp-caption tp-resizeme" 
-                           id="slide-2-layer-10" 
-                           data-x="['left','left','left','left']" 
-                           data-y="['bottom','bottom','bottom','bottom']" 
-                           data-type="image" 
-                           data-responsive_offset="on" 
-                           data-frames="[{&quot;from&quot;:&quot;y:50px;opacity:0;&quot;,&quot;speed&quot;:1500,&quot;to&quot;:&quot;o:1;&quot;,&quot;delay&quot;:700,&quot;ease&quot;:&quot;Power3.easeOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:300,&quot;to&quot;:&quot;opacity:0;&quot;,&quot;ease&quot;:&quot;nothing&quot;}]" 
-                           style="z-index: 8;border-width:0px;">
-                        </div>
-                        <div 
-                           class="tp-caption tp-resizeme" 
-                           id="slide-2-layer-11" 
-                           data-x="['right','right','right','right']" 
-                           data-y="['bottom','bottom','bottom','bottom']" 
-                           data-type="image" 
-                           data-responsive_offset="on" 
-                           data-frames="[{&quot;from&quot;:&quot;y:50px;opacity:0;&quot;,&quot;speed&quot;:1500,&quot;to&quot;:&quot;o:1;&quot;,&quot;delay&quot;:700,&quot;ease&quot;:&quot;Power3.easeOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:300,&quot;to&quot;:&quot;opacity:0;&quot;,&quot;ease&quot;:&quot;nothing&quot;}]" 
-                           style="z-index: 8;border-width:0px;">
-                        </div>
-                     </li>
-                     <li 
-                        data-index="rs-3" 
-                        data-transition="fade" 
-                        data-slotamount="default" 
-                        data-hideafterloop="0" 
-                        data-hideslideonmobile="off" 
-                        data-easein="default" 
-                        data-easeout="default" 
-                        data-masterspeed="300" 
-                        data-rotate="0" 
-                        data-saveperformance="off" 
-                        data-title="Slide">
-                        <div 
-                           class="tp-caption LandingPage-Title tp-resizeme" 
-                           id="slide-3-layer-1"
-                           data-x="['left','center','center','center']" 
-                           data-hoffset="none" data-y="['top','top','top','top']" 
-                           data-voffset="['170','50','70','45']" 
-                           data-fontsize="['60','60','45','35']" 
-                           data-lineheight="['85','85','55','40']" 
-                           data-letterspacing="4" 
-                           data-type="text" 
-                           data-responsive_offset="on" 
-                           data-frames="[{&quot;from&quot;:&quot;x:-50px;opacity:0;&quot;,&quot;speed&quot;:1500,&quot;to&quot;:&quot;o:1;&quot;,&quot;delay&quot;:500,&quot;ease&quot;:&quot;Power3.easeOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:300,&quot;to&quot;:&quot;opacity:0;&quot;,&quot;ease&quot;:&quot;nothing&quot;}]" 
-                           data-textAlign="['left','center','center','center']" 
-                           data-fontweight="400" 
-                           style="z-index: 5; white-space: nowrap;">Best Combo Offer <br> For Your Satisfaction</div>
-                        <div class="tp-caption LandingPage-SubTitle   tp-resizeme" 
-                           id="slide-3-layer-2" 
-                           data-x="['left','center','center','center']" 
-                           data-hoffset="none" 
-                           data-y="['top','top','top','top']" 
-                           data-voffset="['355','240','215','140']" 
-                           data-fontsize="['25','25','17','17']" 
-                           data-lineheight="['30','30','25','25']" 
-                           data-width="['450','450','450','450']"
-                           data-fontweight="500" 
-                           data-type="text" 
-                           data-responsive_offset="on" 
-                           data-frames="[{&quot;from&quot;:&quot;x:-50px;opacity:0;&quot;,&quot;speed&quot;:1500,&quot;to&quot;:&quot;o:1;&quot;,&quot;delay&quot;:700,&quot;ease&quot;:&quot;Power3.easeOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:300,&quot;to&quot;:&quot;opacity:0;&quot;,&quot;ease&quot;:&quot;nothing&quot;}]" 
-                           data-textAlign="['left','left','center','center']" 
-                           style="z-index: 7;white-space: normal;font-style:normal;">Skewers with fries and salad</div>
-                        <div class="tp-caption LandingPage-SubTitle tp-resizeme" 
-                           id="slide-3-layer-3" 
-                           data-x="['left','center','center','center']" 
-                           data-hoffset="none" 
-                           data-y="['top','top','top','top']" 
-                           data-voffset="['415','300','270','185']" 
-                           data-fontsize="['20','20','17','17']" 
-                           data-lineheight="['30','30','25','25']" 
-                           data-width="['380','380','380','380']" 
-                           data-height="none" 
-                           data-whitespace="normal"
-                           data-type="text" 
-                           data-responsive_offset="on" 
-                           data-frames="[{&quot;from&quot;:&quot;x:-50px;opacity:0;&quot;,&quot;speed&quot;:1500,&quot;to&quot;:&quot;o:1;&quot;,&quot;delay&quot;:700,&quot;ease&quot;:&quot;Power3.easeOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:300,&quot;to&quot;:&quot;opacity:0;&quot;,&quot;ease&quot;:&quot;nothing&quot;}]" 
-                           data-textAlign="['left','center','center','center']" 
-                           style="z-index: 7;white-space: normal;font-style:normal; display: flex;align-items: center; max-width: 300px;">
-                           <a href="https://mylightspeed.app/XRYFQKKX/C-ordering/menu" class="btn">Order Now <i 
-                                 class="flaticon-shopping-cart-black-shape"></i>
-                           </a>
-                           <p class="header-product-price color-white">€15.00</p>
-                        </div>
-                        <div 
-                           class="tp-caption tp-resizeme" id="slide-3-layer-4" data-x="['right','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['top','top','top','top']" 
-                           data-voffset="['87','380','370','270']" 
-                           data-type="image" 
-                           data-responsive_offset="on" 
-                           data-frames="[{&quot;from&quot;:&quot;x:0;y:0;z:0;rX:0;rY:0;rZ:0;sX:0.75;sY:0.75;skX:0;skY:0;opacity:0;&quot;,&quot;speed&quot;:1500,&quot;to&quot;:&quot;o:1;&quot;,&quot;delay&quot;:1000,&quot;ease&quot;:&quot;Power3.easeOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:300,&quot;to&quot;:&quot;opacity:0;&quot;,&quot;ease&quot;:&quot;nothing&quot;}]" 
-                           style="z-index: 8;border-width:0px;"><img src="images/header-carousel-3.png" 
-                           alt data-ww="['550px','550px','550px','550px']" 
-                           data-hh="['520px','520px','520px','520px']" 
-                           width="650" 
-                           height="615" 
-                           data-no-retina> </div>
-                        <div 
-                           class="tp-caption tp-resizeme" id="slide-3-layer-5" data-x="['left','left','left','left']" data-y="['top','top','top','top']" 
-                           data-voffset="['30','30','30','30']" 
-                           data-type="image" 
-                           data-responsive_offset="on" 
-                           data-frames="[{&quot;from&quot;:&quot;x:-50px;rZ: -120deg;opacity:0;&quot;,&quot;speed&quot;:1500,&quot;to&quot;:&quot;o:1;&quot;,&quot;delay&quot;:700,&quot;ease&quot;:&quot;Power3.easeOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:300,&quot;to&quot;:&quot;opacity:0;&quot;,&quot;ease&quot;:&quot;nothing&quot;}]" 
-                           style="z-index: 8;border-width:0px;"><img src="images/header-shape-1.png" 
-                           alt data-ww="['42px','42px','42px','42px']" 
-                           data-hh="['43px','43px','43px','43px']" 
-                           width="42" 
-                           height="43" 
-                           data-no-retina> </div>
-                        <div 
-                           class="tp-caption tp-resizeme" 
-                           id="slide-3-layer-6" 
-                           data-x="['center','center','center','center']" 
-                           data-y="['top','top','top','top']" 
-                           data-voffset="['50','-10','10','-20']" 
-                           data-type="image" 
-                           data-responsive_offset="on" 
-                           data-frames="[{&quot;from&quot;:&quot;y:-50px;opacity:0;&quot;,&quot;speed&quot;:1500,&quot;to&quot;:&quot;o:1;&quot;,&quot;delay&quot;:700,&quot;ease&quot;:&quot;Power3.easeOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:300,&quot;to&quot;:&quot;opacity:0;&quot;,&quot;ease&quot;:&quot;nothing&quot;}]" 
-                           style="z-index: 8;border-width:0px;"><img src="images/header-shape-2.png" 
-                           alt data-ww="['90px','90px','90px','90px']" 
-                           data-hh="['81px','81px','81px','81px']" 
-                           width="90" 
-                           height="81" 
-                           data-no-retina> </div>
-                        <div 
-                           class="tp-caption tp-resizeme" 
-                           id="slide-3-layer-7" 
-                           data-x="['right','right','right','right']" 
-                           data-y="['top','top','top','top']" 
-                           data-voffset="['-45','-45','-45','-75']" 
-                           data-type="image" 
-                           data-responsive_offset="on" 
-                           data-frames="[{&quot;from&quot;:&quot;x:50px;opacity:0;&quot;,&quot;speed&quot;:1500,&quot;to&quot;:&quot;o:1;&quot;,&quot;delay&quot;:700,&quot;ease&quot;:&quot;Power3.easeOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:300,&quot;to&quot;:&quot;opacity:0;&quot;,&quot;ease&quot;:&quot;nothing&quot;}]" 
-                           style="z-index: 8;border-width:0px;">
-                        </div>
-                        <div 
-                           class="tp-caption tp-resizeme" 
-                           id="slide-3-layer-8" 
-                           data-x="['right','right','right','right']" 
-                           data-y="['top','top','top','top']" 
-                           data-voffset="['150','150','150','150']" 
-                           data-type="image" 
-                           data-responsive_offset="on" 
-                           data-frames="[{&quot;from&quot;:&quot;x:-50px;rZ: -120deg;opacity:0;&quot;,&quot;speed&quot;:1500,&quot;to&quot;:&quot;o:1;&quot;,&quot;delay&quot;:700,&quot;ease&quot;:&quot;Power3.easeOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:300,&quot;to&quot;:&quot;opacity:0;&quot;,&quot;ease&quot;:&quot;nothing&quot;}]" style="z-index: 8;border-width:0px;"><img src="images/header-shape-1.png" 
-                           alt data-ww="['42px','42px','42px','42px']" 
-                           data-hh="['43px','43px','43px','43px']" 
-                           width="42" 
-                           height="43" data-no-retina> </div>
-                        <div 
-                           class="tp-caption tp-resizeme" 
-                           id="slide-3-layer-9" 
-                           data-x="['center','center','center','center']" 
-                           data-y="['center','center','center','center']" 
-                           data-voffset="['150','150','150','150']" 
-                           data-type="image" 
-                           data-responsive_offset="on" 
-                           data-frames="[{&quot;from&quot;:&quot;x:50px;rZ: -120deg;opacity:0;&quot;,&quot;speed&quot;:1500,&quot;to&quot;:&quot;o:1;&quot;,&quot;delay&quot;:700,&quot;ease&quot;:&quot;Power3.easeOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:300,&quot;to&quot;:&quot;opacity:0;&quot;,&quot;ease&quot;:&quot;nothing&quot;}]" 
-                           style="z-index: 8;border-width:0px;"><img src="images/header-shape-1.png" 
-                           alt data-ww="['42px','42px','42px','42px']" 
-                           data-hh="['43px','43px','43px','43px']" 
-                           width="42" height="43" data-no-retina> </div>
-                        <div 
-                           class="tp-caption tp-resizeme" id="slide-3-layer-10" 
-                           data-x="['left','left','left','left']" 
-                           data-y="['bottom','bottom','bottom','bottom']" 
-                           data-type="image" 
-                           data-responsive_offset="on" 
-                           data-frames="[{&quot;from&quot;:&quot;y:50px;opacity:0;&quot;,&quot;speed&quot;:1500,&quot;to&quot;:&quot;o:1;&quot;,&quot;delay&quot;:700,&quot;ease&quot;:&quot;Power3.easeOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:300,&quot;to&quot;:&quot;opacity:0;&quot;,&quot;ease&quot;:&quot;nothing&quot;}]" 
-                           style="z-index: 8;border-width:0px;">
-                        </div>
-                        <div 
-                           class="tp-caption tp-resizeme" 
-                           id="slide-3-layer-11" 
-                           data-x="['right','right','right','right']" 
-                           data-y="['bottom','bottom','bottom','bottom']" 
-                           data-type="image" 
-                           data-responsive_offset="on" 
-                           data-frames="[{&quot;from&quot;:&quot;y:50px;opacity:0;&quot;,&quot;speed&quot;:1500,&quot;to&quot;:&quot;o:1;&quot;,&quot;delay&quot;:700,&quot;ease&quot;:&quot;Power3.easeOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:300,&quot;to&quot;:&quot;opacity:0;&quot;,&quot;ease&quot;:&quot;nothing&quot;}]" 
-                           style="z-index: 8;border-width:0px;"></div>
-                     </li>
-                  </ul>
-               </div>
-            </div>
-         </div>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
       </div>
-      <section class="welcome-section bg-overlay-1 pt-100 pb-70 bg-black">
-         <div class="container">
-            <div class="row align-items-center justify-content-center">
-               <div class="col-sm-12 col-md-5 col-lg-5 pb-30">
-                  <div class="section-title section-title-left text-center text-md-start m-0">
-                     <small>Welcome To KipGrill</small>
-                     <h2 class="color-white">We bring the traditional Chicken piri piri from Portugal</h2>
-                     <p>Cooking with charcoal and wood gives an amazing flavour on the food, together with a special sauce that bring the chicken to another level.</p>
-                     <a href="about-us.html" class="btn">
-                     More About Us
-                     <i class="flaticon-right-arrow-sketch-1"></i>
-                     </a>
-                  </div>
-               </div>
-               <div class="col-sm-12 col-md-7 col-lg-7">
-                  <div class="about-image-grid">
-                     <div class="about-image-grid-item">
-                        <div class="about-image-grid-inner mb-30">
-                           <img src="images/welcome-image-1.jpg" alt="welcome">
-                        </div>
-                        <div class="about-image-grid-inner mb-30">
-                           <img src="images/welcome-image-2.jpg" alt="welcome">
-                        </div>
-                     </div>
-                     <div class="about-image-grid-item">
-                        <div class="about-image-grid-inner fluid-height">
-                           <img src="images/welcome-image-3.jpg" alt="welcome">
-                        </div> 
-                     </div>
-                  </div>
-               </div>
+    </div>
+  </header>
+
+  <div class="header-bg">
+    <div class="container">
+      <div class="rev_slider_wrapper">
+        <div id="rev_slider_1" class="rev_slider" data-version="5.4.5" style="display: none;">
+          <ul>
+            <li data-index="rs-2" data-transition="fade" data-slotamount="default" data-hideafterloop="0"
+            data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="300"
+            data-rotate="0" data-saveperformance="off" data-title="Slide">
+            <div class="tp-caption LandingPage-Title tp-resizeme" id="slide-2-layer-1"
+              data-x="['left','center','center','center']" data-hoffset="none"
+              data-y="['top','top','top','top']" data-voffset="['170','50','70','45']"
+              data-fontsize="['60','60','45','35']" data-lineheight="['85','85','55','40']"
+              data-letterspacing="4" data-fontweight="400" data-type="text" data-responsive_offset="on"
+              data-frames="[{&quot;from&quot;:&quot;x:-50px;opacity:0;&quot;,&quot;speed&quot;:1500,&quot;to&quot;:&quot;o:1;&quot;,&quot;delay&quot;:500,&quot;ease&quot;:&quot;Power3.easeOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:300,&quot;to&quot;:&quot;opacity:0;&quot;,&quot;ease&quot;:&quot;nothing&quot;}]"
+              data-textAlign="['left','center','center','center']"
+              style="z-index: 5; white-space: nowrap;">We Ensure That You <br> Will Be Satisfied</div>
+            <div class="tp-caption LandingPage-SubTitle tp-resizeme" id="slide-2-layer-2"
+              data-x="['left','center','center','center']" data-hoffset="none"
+              data-y="['top','top','top','top']" data-voffset="['355','240','215','140']"
+              data-fontsize="['25','25','17','17']" data-lineheight="['30','30','25','25']"
+              data-width="['450','450','450','450']" data-fontweight="500" data-type="text" data-responsive_offset="on"
+              data-frames="[{&quot;from&quot;:&quot;x:-50px;opacity:0;&quot;,&quot;speed&quot;:1500,&quot;to&quot;:&quot;o:1;&quot;,&quot;delay&quot;:700,&quot;ease&quot;:&quot;Power3.easeOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:300,&quot;to&quot;:&quot;opacity:0;&quot;,&quot;ease&quot;:&quot;nothing&quot;}]"
+              data-textAlign="['left','left','center','center']"
+              style="z-index: 7; white-space: normal;">1/2 Chicken + Fries, Salad and Drink</div>
+            <div class="tp-caption LandingPage-SubTitle tp-resizeme" id="slide-2-layer-3"
+              data-x="['left','center','center','center']" data-hoffset="none"
+              data-y="['top','top','top','top']" data-voffset="['415','300','270','185']"
+              data-fontsize="['20','20','17','17']" data-lineheight="['30','30','25','25']"
+              data-width="['380','380','380','380']" data-height="none" data-whitespace="normal"
+              data-type="text" data-responsive_offset="on"
+              data-frames="[{&quot;from&quot;:&quot;x:-50px;opacity:0;&quot;,&quot;speed&quot;:1500,&quot;to&quot;:&quot;o:1;&quot;,&quot;delay&quot;:700,&quot;ease&quot;:&quot;Power3.easeOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:300,&quot;to&quot;:&quot;opacity:0;&quot;,&quot;ease&quot;:&quot;nothing&quot;}]"
+              data-textAlign="['left','center','center','center']"
+              style="z-index: 7; white-space: normal; display: flex; align-items: center; max-width: 300px;">
+              <a href="https://mylightspeed.app/XRYFQKKX/C-ordering/menu" class="btn">Order Now <i class="flaticon-shopping-cart-black-shape"></i></a>
+              <p class="header-product-price color-white">€15.00</p>
             </div>
-         </div>
-      </section>
-      <div id="footer-placeholder"></div>
-
-		<script>
-			document.addEventListener("DOMContentLoaded", function () {
-			fetch("/footer.html")
-				.then(response => {
-				if (!response.ok) {
-					throw new Error("Failed to load footer");
-				}
-				return response.text();
-				})
-				.then(data => {
-				document.getElementById("footer-placeholder").innerHTML = data;
-				})
-				.catch(error => console.error(error));
-			});
-		</script>
-
-      <div class="scroll-top" id="scrolltop">
-         <div class="scroll-top-inner">
-            <span><i class="flaticon-up-arrow"></i></span>
-         </div>
+            <div class="tp-caption tp-resizeme" id="slide-2-layer-4"
+              data-x="['right','center','center','center']" data-hoffset="['0','0','0','0']"
+              data-y="['top','top','top','top']" data-voffset="['87','380','370','270']"
+              data-type="image" data-responsive_offset="on"
+              data-frames="[{&quot;from&quot;:&quot;x:0;y:0;z:0;rX:0;rY:0;rZ:0;sX:0.75;sY:0.75;skX:0;skY:0;opacity:0;&quot;,&quot;speed&quot;:1500,&quot;to&quot;:&quot;o:1;&quot;,&quot;delay&quot;:1000,&quot;ease&quot;:&quot;Power3.easeOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:300,&quot;to&quot;:&quot;opacity:0;&quot;,&quot;ease&quot;:&quot;nothing&quot;}]"
+              style="z-index: 8; border-width: 0;">
+              <img src="images/header-carousel-2.png" alt="Half piri piri chicken with fries, salad and a drink" data-ww="['550px','550px','550px','550px']" data-hh="['520px','520px','520px','520px']" width="650" height="615" data-no-retina>
+            </div>
+            </li>
+            <li data-index="rs-3" data-transition="fade" data-slotamount="default" data-hideafterloop="0"
+            data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="300"
+            data-rotate="0" data-saveperformance="off" data-title="Slide">
+            <div class="tp-caption LandingPage-Title tp-resizeme" id="slide-3-layer-1"
+              data-x="['left','center','center','center']" data-hoffset="none"
+              data-y="['top','top','top','top']" data-voffset="['170','50','70','45']"
+              data-fontsize="['60','60','45','35']" data-lineheight="['85','85','55','40']"
+              data-letterspacing="4" data-fontweight="400" data-type="text" data-responsive_offset="on"
+              data-frames="[{&quot;from&quot;:&quot;x:-50px;opacity:0;&quot;,&quot;speed&quot;:1500,&quot;to&quot;:&quot;o:1;&quot;,&quot;delay&quot;:500,&quot;ease&quot;:&quot;Power3.easeOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:300,&quot;to&quot;:&quot;opacity:0;&quot;,&quot;ease&quot;:&quot;nothing&quot;}]"
+              data-textAlign="['left','center','center','center']"
+              style="z-index: 5; white-space: nowrap;">Best Combo Offer <br> For Your Satisfaction</div>
+            <div class="tp-caption LandingPage-SubTitle tp-resizeme" id="slide-3-layer-2"
+              data-x="['left','center','center','center']" data-hoffset="none"
+              data-y="['top','top','top','top']" data-voffset="['355','240','215','140']"
+              data-fontsize="['25','25','17','17']" data-lineheight="['30','30','25','25']"
+              data-width="['450','450','450','450']" data-fontweight="500" data-type="text" data-responsive_offset="on"
+              data-frames="[{&quot;from&quot;:&quot;x:-50px;opacity:0;&quot;,&quot;speed&quot;:1500,&quot;to&quot;:&quot;o:1;&quot;,&quot;delay&quot;:700,&quot;ease&quot;:&quot;Power3.easeOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:300,&quot;to&quot;:&quot;opacity:0;&quot;,&quot;ease&quot;:&quot;nothing&quot;}]"
+              data-textAlign="['left','left','center','center']"
+              style="z-index: 7; white-space: normal;">Skewers with fries and salad</div>
+            <div class="tp-caption LandingPage-SubTitle tp-resizeme" id="slide-3-layer-3"
+              data-x="['left','center','center','center']" data-hoffset="none"
+              data-y="['top','top','top','top']" data-voffset="['415','300','270','185']"
+              data-fontsize="['20','20','17','17']" data-lineheight="['30','30','25','25']"
+              data-width="['380','380','380','380']" data-height="none" data-whitespace="normal"
+              data-type="text" data-responsive_offset="on"
+              data-frames="[{&quot;from&quot;:&quot;x:-50px;opacity:0;&quot;,&quot;speed&quot;:1500,&quot;to&quot;:&quot;o:1;&quot;,&quot;delay&quot;:700,&quot;ease&quot;:&quot;Power3.easeOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:300,&quot;to&quot;:&quot;opacity:0;&quot;,&quot;ease&quot;:&quot;nothing&quot;}]"
+              data-textAlign="['left','center','center','center']"
+              style="z-index: 7; white-space: normal; display: flex; align-items: center; max-width: 300px;">
+              <a href="https://mylightspeed.app/XRYFQKKX/C-ordering/menu" class="btn">Order Now <i class="flaticon-shopping-cart-black-shape"></i></a>
+              <p class="header-product-price color-white">€15.00</p>
+            </div>
+            <div class="tp-caption tp-resizeme" id="slide-3-layer-4"
+              data-x="['right','center','center','center']" data-hoffset="['0','0','0','0']"
+              data-y="['top','top','top','top']" data-voffset="['87','380','370','270']"
+              data-type="image" data-responsive_offset="on"
+              data-frames="[{&quot;from&quot;:&quot;x:0;y:0;z:0;rX:0;rY:0;rZ:0;sX:0.75;sY:0.75;skX:0;skY:0;opacity:0;&quot;,&quot;speed&quot;:1500,&quot;to&quot;:&quot;o:1;&quot;,&quot;delay&quot;:1000,&quot;ease&quot;:&quot;Power3.easeOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:300,&quot;to&quot;:&quot;opacity:0;&quot;,&quot;ease&quot;:&quot;nothing&quot;}]"
+              style="z-index: 8; border-width: 0;">
+              <img src="images/header-carousel-3.png" alt="Skewers with fries and salad" data-ww="['550px','550px','550px','550px']" data-hh="['520px','520px','520px','520px']" width="650" height="615" data-no-retina>
+            </div>
+            <div class="tp-caption tp-resizeme" id="slide-3-layer-5"
+              data-x="['left','left','left','left']" data-y="['top','top','top','top']" data-voffset="['30','30','30','30']"
+              data-type="image" data-responsive_offset="on"
+              data-frames="[{&quot;from&quot;:&quot;x:-50px;rZ: -120deg;opacity:0;&quot;,&quot;speed&quot;:1500,&quot;to&quot;:&quot;o:1;&quot;,&quot;delay&quot;:700,&quot;ease&quot;:&quot;Power3.easeOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:300,&quot;to&quot;:&quot;opacity:0;&quot;,&quot;ease&quot;:&quot;nothing&quot;}]"
+              style="z-index: 8; border-width: 0;">
+              <img src="images/header-shape-1.png" alt="" data-ww="['42px','42px','42px','42px']" data-hh="['43px','43px','43px','43px']" width="42" height="43" data-no-retina>
+            </div>
+            <div class="tp-caption tp-resizeme" id="slide-3-layer-6"
+              data-x="['center','center','center','center']" data-y="['top','top','top','top']" data-voffset="['50','-10','10','-20']"
+              data-type="image" data-responsive_offset="on"
+              data-frames="[{&quot;from&quot;:&quot;y:-50px;opacity:0;&quot;,&quot;speed&quot;:1500,&quot;to&quot;:&quot;o:1;&quot;,&quot;delay&quot;:700,&quot;ease&quot;:&quot;Power3.easeOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:300,&quot;to&quot;:&quot;opacity:0;&quot;,&quot;ease&quot;:&quot;nothing&quot;}]"
+              style="z-index: 8; border-width: 0;">
+              <img src="images/header-shape-2.png" alt="" data-ww="['90px','90px','90px','90px']" data-hh="['81px','81px','81px','81px']" width="90" height="81" data-no-retina>
+            </div>
+            <div class="tp-caption tp-resizeme" id="slide-3-layer-8"
+              data-x="['right','right','right','right']" data-y="['top','top','top','top']" data-voffset="['150','150','150','150']"
+              data-type="image" data-responsive_offset="on"
+              data-frames="[{&quot;from&quot;:&quot;x:-50px;rZ: -120deg;opacity:0;&quot;,&quot;speed&quot;:1500,&quot;to&quot;:&quot;o:1;&quot;,&quot;delay&quot;:700,&quot;ease&quot;:&quot;Power3.easeOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:300,&quot;to&quot;:&quot;opacity:0;&quot;,&quot;ease&quot;:&quot;nothing&quot;}]"
+              style="z-index: 8; border-width: 0;">
+              <img src="images/header-shape-1.png" alt="" data-ww="['42px','42px','42px','42px']" data-hh="['43px','43px','43px','43px']" width="42" height="43" data-no-retina>
+            </div>
+            <div class="tp-caption tp-resizeme" id="slide-3-layer-9"
+              data-x="['center','center','center','center']" data-y="['center','center','center','center']" data-voffset="['150','150','150','150']"
+              data-type="image" data-responsive_offset="on"
+              data-frames="[{&quot;from&quot;:&quot;x:50px;rZ: -120deg;opacity:0;&quot;,&quot;speed&quot;:1500,&quot;to&quot;:&quot;o:1;&quot;,&quot;delay&quot;:700,&quot;ease&quot;:&quot;Power3.easeOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:300,&quot;to&quot;:&quot;opacity:0;&quot;,&quot;ease&quot;:&quot;nothing&quot;}]"
+              style="z-index: 8; border-width: 0;">
+              <img src="images/header-shape-1.png" alt="" data-ww="['42px','42px','42px','42px']" data-hh="['43px','43px','43px','43px']" width="42" height="43" data-no-retina>
+            </div>
+            </li>
+          </ul>
+        </div>
       </div>
+    </div>
+  </div>
 
-      <script>
-         $(window).on('load', function() {
+  <section class="welcome-section bg-overlay-1 pt-100 pb-70 bg-black">
+    <div class="container">
+      <div class="row align-items-center justify-content-center">
+        <div class="col-sm-12 col-md-5 col-lg-5 pb-30">
+          <div class="section-title section-title-left text-center text-md-start m-0">
+            <small>Welcome To KipGrill</small>
+            <h2 class="color-white">We bring the traditional Chicken piri piri from Portugal</h2>
+            <p>Cooking with charcoal and wood gives an amazing flavour on the food, together with a special sauce that bring the chicken to another level.</p>
+            <a href="about-us.html" class="btn">More About Us <i class="flaticon-right-arrow-sketch-1"></i></a>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-7 col-lg-7">
+          <div class="about-image-grid">
+            <div class="about-image-grid-item">
+              <div class="about-image-grid-inner mb-30">
+                <img src="images/welcome-image-1.jpg" alt="KipGrill food">
+              </div>
+              <div class="about-image-grid-inner mb-30">
+                <img src="images/welcome-image-2.jpg" alt="KipGrill food">
+              </div>
+            </div>
+            <div class="about-image-grid-item">
+              <div class="about-image-grid-inner fluid-height">
+                <img src="images/welcome-image-3.jpg" alt="KipGrill food">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-            if (!sessionStorage.getItem('popupShown')) {
+  <div id="footer-placeholder"></div>
 
-               setTimeout(function() {
-                  $.magnificPopup.open({
-                     items: { src: '#autoPopup' },
-                     type: 'inline'
-                  });
+  <div class="scroll-top" id="scrolltop">
+    <div class="scroll-top-inner">
+      <span><i class="flaticon-up-arrow"></i></span>
+    </div>
+  </div>
 
-                  sessionStorage.setItem('popupShown', 'true');
-               }, 800);
-            }
-         });
-      </script>
-      <script data-cfasync="false" src="images/email-decode.min.js"></script><script src="images/jquery.min.js"></script>
-      <script src="images/bootstrap.bundle.min.js"></script>
-      <script src="images/jquery-ui.js"></script>
-      <script src="images/jquery.timepicker.min.js"></script>
-      <script src="images/jquery.magnific-popup.min.js"></script>
-      <script src="images/owl.carousel.min.js"></script>
-      <script src="images/slick.min.js"></script>
-      <script src="images/jquery.themepunch.revolution.min.js"></script>
-      <script src="images/jquery.themepunch.tools.min.js"></script>
-      <script src="images/revolution.extension.actions.min.js"></script>
-      <script src="images/revolution.extension.carousel.min.js"></script>
-      <script src="images/revolution.extension.kenburn.min.js"></script>
-      <script src="images/revolution.extension.layeranimation.min.js"></script>
-      <script src="images/revolution.extension.migration.min.js"></script>
-      <script src="images/revolution.extension.navigation.min.js"></script>
-      <script src="images/revolution.extension.parallax.min.js"></script>
-      <script src="images/revolution.extension.slideanims.min.js"></script>
-      <script src="images/revolution.extension.video.min.js"></script>
-      <script src="images/wow.min.js"></script>
-      <script src="images/jquery.ajaxchimp.min.js"></script>
-      <script src="images/form-validator.min.js"></script>
-      <script src="images/contact-form-script.js"></script>
-      <script src="images/jquery.meanmenu.min.js"></script>
-      <script src="images/script.js"></script>
-<script>
-$(window).on('load', function() {
-
-   // Small delay so it appears AFTER preloader fade
-   setTimeout(function() {
-      $.magnificPopup.open({
-         items: {
-            src: '#autoPopup'
-         },
-         type: 'inline',
-         removalDelay: 300,
-         mainClass: 'mfp-fade'
-      });
-   }, 800); // adjust delay if needed
-
-});
-</script>
-<script>
-   jQuery(document).on('click', '.popup-close', function (e) {
-      e.preventDefault();
-      jQuery.magnificPopup.close();
-   });
-</script>
-   </body>
+  <script src="images/jquery.min.js"></script>
+  <script src="images/bootstrap.bundle.min.js"></script>
+  <script src="images/jquery-ui.js"></script>
+  <script src="images/jquery.timepicker.min.js"></script>
+  <script src="images/jquery.magnific-popup.min.js"></script>
+  <script src="images/owl.carousel.min.js"></script>
+  <script src="images/slick.min.js"></script>
+  <script src="images/jquery.themepunch.revolution.min.js"></script>
+  <script src="images/jquery.themepunch.tools.min.js"></script>
+  <script src="images/revolution.extension.actions.min.js"></script>
+  <script src="images/revolution.extension.carousel.min.js"></script>
+  <script src="images/revolution.extension.kenburn.min.js"></script>
+  <script src="images/revolution.extension.layeranimation.min.js"></script>
+  <script src="images/revolution.extension.migration.min.js"></script>
+  <script src="images/revolution.extension.navigation.min.js"></script>
+  <script src="images/revolution.extension.parallax.min.js"></script>
+  <script src="images/revolution.extension.slideanims.min.js"></script>
+  <script src="images/revolution.extension.video.min.js"></script>
+  <script src="images/wow.min.js"></script>
+  <script src="images/jquery.ajaxchimp.min.js"></script>
+  <script src="images/form-validator.min.js"></script>
+  <script src="images/contact-form-script.js"></script>
+  <script src="images/jquery.meanmenu.min.js"></script>
+  <script src="images/script.js"></script>
+  <script src="js/site.js"></script>
+</body>
 </html>
